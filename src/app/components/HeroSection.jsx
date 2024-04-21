@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Fragment } from "react";
 import {
   InstagramIcon,
   LinkedinIcon,
@@ -69,7 +69,12 @@ const HeroSection = () => {
         </div>
         <div className="flex-1 flex justify-center items-center">
           <div className="bg-gradient-to-br from-[#b16cea]  via-[#ff5e69] to-[#ffa84b] rounded-full overflow-hidden">
-            <Image src={"/hero-image.png"} width={300} height={500} />
+            <Image
+              src={"/hero-image.png"}
+              width={300}
+              height={500}
+              alt="Profile Picture"
+            />
           </div>
         </div>
       </div>
@@ -92,16 +97,14 @@ const Strip = ({ reversed = false }) => (
       reversed ? "-rotate-[7deg]" : "rotate-[7deg]"
     )}
   >
-    {[1, 2, 3].map(() =>
+    {[1, 2, 3].map((r) =>
       stripTags.map((item) => (
-        <>
-          <span key={item} className="text-[#161513] text-3xl font-semibold">
-            {item}
-          </span>
+        <Fragment key={item}>
+          <span className="text-[#161513] text-3xl font-semibold">{item}</span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#ff5e69] to-[#ffa84b] text-5xl">
             ✦
           </span>
-        </>
+        </Fragment>
       ))
     )}
   </div>

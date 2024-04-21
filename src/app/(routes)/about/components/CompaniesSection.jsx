@@ -25,9 +25,9 @@ const CompaniesSection = () => {
       </h2>
       <div className="grid grid-cols-5 w-full gap-y-10">
         {companies.map((src) => (
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center items-center" key={src}>
             <div className="bg-white px-5 py-3 rounded-lg w-fit">
-              <Image src={src} width={80} height={40} />
+              <Image src={src} width={80} height={40} alt="Logo" />
             </div>
           </div>
         ))}

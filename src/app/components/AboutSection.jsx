@@ -8,7 +8,12 @@ const AboutSection = () => {
     <section className="md:px-20 lg:px-40 w-full flex justify-between mb-40">
       <div className="flex-1 flex justify-center items-center">
         <div className="bg-gradient-to-br from-[#b16cea]  via-[#ff5e69] to-[#ffa84b] rounded-t-full overflow-hidden">
-          <Image src={"/hero-image.png"} width={300} height={500} />
+          <Image
+            src={"/hero-image.png"}
+            width={300}
+            height={500}
+            alt="Profile Picture"
+          />
         </div>
       </div>
       <div className="flex-1 flex flex-col gap-10">

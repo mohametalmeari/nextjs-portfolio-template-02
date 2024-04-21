@@ -54,6 +54,7 @@ const TestimonialSection = () => {
             src={TestimonialData[current].image}
             width={300}
             height={500}
+            alt="Profile Picture"
           />
         </div>
       </div>
@@ -80,6 +81,7 @@ const TestimonialSection = () => {
           <div className="flex gap-1 items-center">
             {TestimonialData.map((_, index) => (
               <div
+                key={index}
                 className={cn(
                   "w-2 aspect-square bg-gray-500 rounded-full",
                   index === current && "bg-white"

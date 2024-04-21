@@ -20,6 +20,7 @@ const NetworkingSection = () => {
           src={"/hero-image.png"}
           width={300}
           height={500}
+          alt="Profile Picture"
         />
       </div>
       <div className="bg-gradient-to-r from-[#b16cea] via-[#ff5e69] to-[#ffa84b] p-[1px] w-[600px] rounded-3xl my-5">
