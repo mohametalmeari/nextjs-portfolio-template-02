@@ -36,7 +36,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="flex items-center md:px-20 lg:px-40 justify-between bg-[#161513] sticky top-0">
+    <nav className="flex items-center md:px-20 lg:px-40 justify-between bg-[#161513] sticky top-0 z-50 bg-opacity-90">
       <div className="flex-1">
         <Link href="/" className="font-bold text-4xl">
           LOGO
