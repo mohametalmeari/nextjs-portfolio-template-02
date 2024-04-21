@@ -47,7 +47,7 @@ const TestimonialData = [
 const TestimonialSection = () => {
   const [current, setCurrent] = useState(0);
   return (
-    <section className="md:px-20 lg:px-40 w-full flex justify-between mb-40">
+    <section className="md:px-20 lg:px-40 w-full flex justify-between mb-40 py-10 bg-white bg-opacity-5">
       <div className="flex-1 flex justify-center items-center">
         <div className="bg-gradient-to-br from-[#b16cea]  via-[#ff5e69] to-[#ffa84b] rounded-t-full overflow-hidden">
           <Image

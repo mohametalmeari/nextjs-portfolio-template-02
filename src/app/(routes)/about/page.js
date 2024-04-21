@@ -1,5 +1,6 @@
 import CompaniesSection from "./components/CompaniesSection";
 import HeroSection from "./components/HeroSection";
+import NetworkingSection from "./components/NetworkingSection";
 import QualificationsSection from "./components/QualificationsSection";
 
 export default function About() {
@@ -8,6 +9,7 @@ export default function About() {
       <HeroSection />
       <QualificationsSection />
       <CompaniesSection />
+      <NetworkingSection />
     </main>
   );
 }
