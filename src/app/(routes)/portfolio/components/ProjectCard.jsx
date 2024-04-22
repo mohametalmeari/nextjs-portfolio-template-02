@@ -4,10 +4,10 @@ import { ArrowLeftIcon } from "lucide-react";
 import React from "react";
 
 const ProjectCard = ({ project, index }) => {
-  const { title, link, image, type } = project;
+  const { title, id, images, type } = project;
   return (
     <div
-      style={{ backgroundImage: `url(${image})` }}
+      style={{ backgroundImage: `url(${images[0]})` }}
       className={cn(
         "flex flex-col overflow-hidden bg-white text-[#161513] rounded-xl col-span-1 bg-cover",
         index % 4 === 0 || (index - 3) % 4 === 0 ? "row-span-1" : "row-span-10"
@@ -24,7 +24,7 @@ const ProjectCard = ({ project, index }) => {
             className={cn(
               "group rounded-full aspect-square p-2 bg-none bg-white"
             )}
-            onClick={() => (window.location.href = link)}
+            onClick={() => (window.location.href = `/portfolio/projects/${id}`)}
           >
             <ArrowLeftIcon className="rotate-[135deg] text-gray-500 group-hover:text-white" />
           </Button>

@@ -3,67 +3,7 @@
 import React, { useState } from "react";
 import Categories from "./Categories";
 import ProjectCard from "./ProjectCard";
-
-const categories = ["UI/UX Design", "Development", "Graphic Design"];
-
-const projectsData = [
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [categories[3]],
-  },
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [...categories],
-  },
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [categories[0]],
-  },
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [categories[1]],
-  },
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [categories[3]],
-  },
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [...categories],
-  },
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [categories[0]],
-  },
-  {
-    title: "Project 1",
-    link: "/",
-    image: "/about-image.jpg",
-    type: "Website",
-    categories: [categories[1]],
-  },
-];
+import { categories, projectsData } from "@/lib/data";
 
 const ProjectsSection = () => {
   const [currentCategory, setCurrentCategory] = useState("All");
