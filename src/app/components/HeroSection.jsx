@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import OutlineButton from "./OutlineButton";
 import IconButton from "./IconButton";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
+import { cn, loop } from "@/lib/utils";
 
 const HeroSection = () => {
   return (
@@ -97,7 +97,7 @@ const Strip = ({ reversed = false }) => (
       reversed ? "-rotate-[7deg]" : "rotate-[7deg]"
     )}
   >
-    {[1, 2, 3].map((r) =>
+    {loop(3, () =>
       stripTags.map((item) => (
         <Fragment key={item}>
           <span className="text-[#161513] text-3xl font-semibold">{item}</span>
@@ -108,8 +108,4 @@ const Strip = ({ reversed = false }) => (
       ))
     )}
   </div>
-);
-
-const Star = () => (
-  <div className="h-5 w-5 bg-gradient-to-br from-[#ff5e69] to-[#ffa84b] rounded-ful" />
 );
