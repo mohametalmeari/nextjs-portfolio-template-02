@@ -60,7 +60,12 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="flex-1 flex justify-end">
-        <button className="bg-white text-[#161513] rounded-lg px-4 py-2">
+        <button
+          onClick={() => {
+            window.location.href = "/#contact";
+          }}
+          className="bg-white text-[#161513] rounded-lg px-4 py-2 hover:bg-transparent hover:ring-2 hover:ring-white hover:text-white transition-all"
+        >
           Let's Talk
         </button>
       </div>
