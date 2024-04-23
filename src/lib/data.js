@@ -1,6 +1,30 @@
 import { loop } from "./utils";
 
 export const categories = ["UI/UX Design", "Development", "Graphic Design"];
+let n = -1;
+export const servicesData = [
+  {
+    title: categories[0],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus impedit ipsa sint architecto quisquam optio dolorem nihil aspernatur quis ut eos voluptatum debitis similique mollitia quibusdam repellat itaque placeat.",
+    image: "/about-image.jpg",
+    link: "/portfolio/projects/0",
+  },
+  {
+    title: categories[1],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus impedit ipsa sint architecto quisquam optio dolorem nihil aspernatur quis ut eos voluptatum debitis similique mollitia quibusdam repellat itaque placeat.",
+    image: "/about-image.jpg",
+    link: "/portfolio/projects/1",
+  },
+  {
+    title: categories[3],
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus impedit ipsa sint architecto quisquam optio dolorem nihil aspernatur quis ut eos voluptatum debitis similique mollitia quibusdam repellat itaque placeat.",
+    image: "/about-image.jpg",
+    link: "/portfolio/projects/2",
+  },
+];
 
 export const projectsData = loop(7, (_, index) => ({
   id: index,

@@ -1,29 +1,6 @@
 import React from "react";
 import Service from "./Service";
-
-const servicesData = [
-  {
-    title: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus impedit ipsa sint architecto quisquam optio dolorem nihil aspernatur quis ut eos voluptatum debitis similique mollitia quibusdam repellat itaque placeat.",
-    image: "/about-image.jpg",
-    link: "/",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus impedit ipsa sint architecto quisquam optio dolorem nihil aspernatur quis ut eos voluptatum debitis similique mollitia quibusdam repellat itaque placeat.",
-    image: "/about-image.jpg",
-    link: "/",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, minus impedit ipsa sint architecto quisquam optio dolorem nihil aspernatur quis ut eos voluptatum debitis similique mollitia quibusdam repellat itaque placeat.",
-    image: "/about-image.jpg",
-    link: "/",
-  },
-];
+import { servicesData } from "@/lib/data";
 
 const ServicesSection = () => {
   return (
