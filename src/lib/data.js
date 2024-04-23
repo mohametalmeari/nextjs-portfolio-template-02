@@ -44,3 +44,19 @@ export const projectsData = loop(7, (_, index) => ({
     },
   ],
 }));
+
+export const blogData = loop(7, (_, index) => ({
+  id: index,
+  title:
+    "Blog Post 1, a very long title to test the overflow of the text and see if it works or not",
+  date: "2021-10-10",
+  image: "/about-image.jpg",
+  link: `/blog/${index}`,
+  content: loop(4, () =>
+    loop(
+      3,
+      () =>
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum quibusdam cupiditate quis iusto expedita, nihil consequuntur nobis sed accusamus quia explicabo deserunt deleniti necessitatibus quas omnis nesciunt rem illo magni ea ullam"
+    ).join(" ")
+  ),
+}));

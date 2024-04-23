@@ -1,33 +1,6 @@
 import React from "react";
 import PostCard from "./PostCard";
-
-const blogData = [
-  {
-    title:
-      "Blog Post 1, a very long title to test the overflow of the text and see if it works or not",
-    date: "2021-10-10",
-    image: "/about-image.jpg",
-    link: "/",
-  },
-  {
-    title: "Blog Post, a very long title to test the overflow of the text",
-    date: "2021-10-10",
-    image: "/about-image.jpg",
-    link: "/",
-  },
-  {
-    title: "Blog Post",
-    date: "2021-10-10",
-    image: "/about-image.jpg",
-    link: "/",
-  },
-  {
-    title: "Blog Post",
-    date: "2021-10-10",
-    image: "/about-image.jpg",
-    link: "/",
-  },
-];
+import { blogData } from "@/lib/data";
 
 const BlogSection = () => {
   return (
